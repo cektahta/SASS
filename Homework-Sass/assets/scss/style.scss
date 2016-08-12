@@ -1,0 +1,613 @@
+@import 'variables';
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+
+}
+
+* a {
+  text-decoration: none;
+}
+
+.paddings {
+  padding-right: 8%;
+  padding-left: 8%;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color:$backgroundcolor;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  background: url(img/bg.jpg) center center;
+}
+
+header {
+  height: 50px;
+  background-color: #333;
+}
+
+header h1 {
+  float: left;
+  font-size: 3em;
+  color: $headercolor;
+  margin-top: 9px;
+}
+
+nav {
+  float: right;
+  margin-top: 17px;
+  position: relative;
+}
+
+header ul {
+  right: 25px;
+}
+
+header li {
+  float: left;
+  margin-right: 10px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: $headercolor;
+}
+
+header a:hover,
+header a:active {
+  color: $grey;
+}
+
+header img {
+  width: 16px;
+  height: 16px;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  right: -15px;
+}
+
+#second-nav {
+  width: 100%;
+  height: 50px;
+  background-color: $red;
+  text-align: center;
+}
+
+#second-nav a {
+  color:$headercolor;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+#second-nav a:hover,
+#second-nav a:active {
+  color: $grey;
+}
+
+#second-nav ul {
+  display: inline-block;
+  margin-top: 18px;
+  #second-nav li {
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+
+
+#first-content {
+  width: 100%;
+  height: 500px;
+  background: url(http://cdn.movieweb.com/img.news.tops/NEbZRNg3YX0cfc_1_b.jpg) center center;
+  background-size: cover;
+  padding-top: 140px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#first-content h1 {
+  font-size: 4em;
+  color: $headercolor;
+  text-shadow: $backgroundcolor;
+}
+
+#first-content h3 {
+  font-size: 1.7em;
+  color: $headercolor;
+  text-shadow: 1px 3px 2px #000;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.button-style {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border: 1px solid $headercolor;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 20px;
+  background-color: $backgroundcolor;
+  cursor: pointer;
+}
+
+.button-style:hover {
+  background-color: rgba(100%, 0%, 0%, 0.1);
+}
+
+.button-style a {
+  display: inline-block;
+  color: $headercolor;
+  font-size: 1.4em;
+  font-weight: normal;
+  padding-top: 18px;
+}
+
+#img-first-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  right: 15px;
+  bottom: -20px;
+}
+
+#img-first-content img {
+  width: 160px;
+  height: 90px;
+}
+
+#img-first-content img:hover {
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#img-first-content img:nth-child(3) {
+  width: 210px;
+  height: 115px;
+}
+
+#second-content {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#second-content h1 {
+  color: $headercolor;
+  font-size: 2.5em;
+}
+
+#second-content p {
+  color: $grey;
+  font-size: 1.6em;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+}
+
+#movie-type {
+  width: 80%;
+  height: 100%;
+  margin: 40px auto 0;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+}
+
+#movie-type label {
+  font-size: 1.6em;
+  color: $headercolor;
+  padding-left: 20px;
+}
+
+#movie-type span {
+  width: 25%;
+  margin-top: 5px;
+  float: left;
+}
+
+#btn-search {
+  padding-bottom: 30px;
+}
+
+#btn-search input {
+  color: $headercolor;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+#btn-search wrapper {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#section3 {
+  background-color: $backgroundcolor;
+  width: 100%;
+  display: block;
+}
+
+#section3 h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  color: $headercolor;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+#section3 article {
+  width: 24%;
+  height: 400px;
+  margin-right: 1%;
+  float: left;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+#article-1 {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/564x/16/81/03/16810309d10e16135b7c49f7894d4319.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-2 {
+  background-image: url(http://ilarge.lisimg.com/image/5612813/836full-wrecked-poster.jpg );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-3 {
+  background-image: url(http://www.impawards.com/2013/posters/pain_and_gain_ver6.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-4 {
+  background-image: url(http://images4.fanpop.com/image/photos/17100000/Shadowboxer-Movie-Poster-stephen-dorff-17130863-1000-1500.jpg );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-5 {
+  background-image: url(https://www.movieposter.com/posters/archive/main/69/MPW-34753 );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-6 {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/564x/a4/15/2f/a4152f31df64bd55fb94b90b866da1c7.jpg );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-7 {
+  background-image: url(http://www.impawards.com/2006/posters/perfume.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-8 {
+  background-image: url(http://cdn.collider.com/wp-content/uploads/megamind_movie_poster_will_ferrell_01.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-9 {
+  background-image: url(http://www.impawards.com/2013/posters/dark_circles_xlg.jpg );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-10 {
+  background-image: url(http://nuggettheatre.com/wp-content/uploads/2015/01/Taken-3-Movie-Poster.jpg );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-11 {
+  background-image: url(http://www.movie-poster-artwork-finder.com/posters/jaws-3-poster-artwork-dennis-quaid-bess-armstrong-louis-gossett-jr-small.jpg );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#article-12 {
+  background-image: url(https://amcreativemedia012.files.wordpress.com/2012/06/the-unseen.jpg );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#btn-wrapper {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#btn-view {
+  margin-top: 100px;
+}
+
+.article-content {
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0%, 0%, 0%, 0.4)), to(rgba(0%, 0%, 0%, 0.9)));
+  background-image: -webkit-linear-gradient(top, rgba(0%, 0%, 0%, 0.4), rgba(0%, 0%, 0%, 0.9));
+  background-image: -moz-linear-gradient(top, rgba(0%, 0%, 0%, 0.4), rgba(0%, 0%, 0%, 0.9));
+  background-image: linear-gradient(to bottom, rgba(0%, 0%, 0%, 0.4), rgba(0%, 0%, 0%, 0.9));
+  width: 100%;
+  bottom: 0;
+}
+
+.article-content div {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.article-content div:first-child {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.article-content div:last-child {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.article-content div span {
+  display: block;
+  color: #d8d7d7;
+  margin-bottom: 3px;
+}
+
+.article-div h2 {
+  color: $headercolor;
+}
+
+.article-div {
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+}
+
+.article-footer {
+  display: block;
+  position: absolute;
+  bottom: -45px;
+  width: 100%;
+  text-align: center;
+}
+
+.article-footer p {
+  color: $grey;
+}
+
+#section4 {
+  color: $headercolor;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(100%, 21%, 30.6%, 0.5);
+}
+
+#img-wrapper img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+
+#section4 h1 {
+  padding: 30px 0;
+}
+
+#section4 h2 {
+  padding: 30px 0 5px;
+}
+
+#section4 h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.4em;
+  color: rgba(75.3%, 75.3%, 75.3%, 1);
+}
+
+#section4 p {
+  width: 60%;
+  margin: 30px auto 0;
+  padding-bottom: 20px;
+  font-size: 1.4em;
+}
+
+#span-wrapper {
+  width: 100%;
+  display: block;
+  position: relative;
+  bottom: 120px;
+}
+
+#span-wrapper span {
+  position: relative;
+  font-size: 4em;
+  cursor: pointer;
+  font-family: Courier New, Courier, monospace;
+}
+
+#span-wrapper span:hover {
+  color: $grey;
+}
+
+#left {
+  right: 150px;
+}
+
+#right {
+  left: 150px;
+}
+
+#btn-mail input {
+  color: $headercolor;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+#mail {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#mail form input,
+#mail form textarea {
+  background-color: rgba(84.7%, 84.3%, 84.3%, 0);
+  border: none;
+  color: $headercolor;
+  width: 100%;
+  font-family: Courier New, Courier, monospace;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+#mail form div {
+  display: inline-block;
+  border-bottom: $grey;
+}
+
+#email-name-wrapper,
+#email-email-wrapper {
+  width: 47%;
+}
+
+#email-name-wrapper {
+  margin-right: 5%;
+}
+
+#email-text-wrapper {
+  width: 100%;
+  margin-top: 100px;
+}
+
+#mail textarea {
+  display: block;
+  width: 100%;
+}
+
+#btn-email {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#mail h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  color:$headercolor;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+#btn-email input {
+  color: $headercolor;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+#sait-footer {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: $backgroundcolor;
+}
+
+#sait-footer div {
+  display: inline-block;
+  width: 31%;
+  text-align: center;
+  padding-top: 35px;
+}
+
+#footer1 p {
+  color: $grey;
+  font-size: 1.4em;
+}
+
+#footer2 p {
+  color: $headercolor;
+  font-size: 1.4em;
+}
+
+#footer3 li {
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#sidebar {
+  background: $backgroundcolor;
+  width: 200px;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  z-index: 5;
+}
+
+#sidebar.visible {
+  left: 0px;
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+
+#sidebar ul li {
+  list-style: none;
+}
+
+#sidebar a {
+  background: $backgroundcolor;
+  color: $headercolor;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#sidebar-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+}
+
+#sidebar-btn span {
+  height: 2px;
+  background: $grey;
+  margin-bottom: 5px;
+  display: block;
+}
